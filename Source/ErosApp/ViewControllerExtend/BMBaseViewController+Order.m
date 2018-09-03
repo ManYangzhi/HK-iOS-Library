@@ -19,8 +19,7 @@
 /* 判断是否隐藏导航栏 */
 - (BOOL)isHideNavbar
 {
-    if (!self.routerModel.navShow ||
-        [self currentVcIs:[BMConfigManager shareInstance].platform.page.homePage]) {
+    if (!self.routerModel.navShow) {
         
         return YES;
     }

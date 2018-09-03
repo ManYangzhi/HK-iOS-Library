@@ -181,16 +181,25 @@
         tabBarController.viewControllers = controllers;
         return tabBarController;
     }
-
+    
+    BMRouterModel *routerModel = [[BMRouterModel alloc]init];
+    routerModel.url = [BMAppResource configJSFullURLWithPath:platformInfo.page.homePage];
+    routerModel.navShow = YES;
+    routerModel.canBack = YES;
+    routerModel.navTitle = @"eros";
+    
     BMBaseViewController *firstVc = [[BMBaseViewController alloc] init];
     firstVc.url = [BMAppResource configJSFullURLWithPath:platformInfo.page.homePage];
-    BMNavigationController *firstNavc = [[BMNavigationController alloc] initWithRootViewController:firstVc];
+    firstVc.routerModel = routerModel;
     
-    return firstNavc;
-
+    
+    //    BMNavigationController *firstNavc = [[BMNavigationController alloc] initWithRootViewController:firstVc];
+    
+    return firstVc;
+    
     /* 引导页面 */
-//    [HYGuideView showInView:_window];
-
+    //    [HYGuideView showInView:_window];
+    
 }
 
 - (void)openViewControllerWithRouterModel:(BMRouterModel *)routerModel weexInstance:(WXSDKInstance *)weexInstance
