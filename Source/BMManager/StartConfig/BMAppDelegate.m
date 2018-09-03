@@ -27,8 +27,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor = [UIColor whiteColor];
     
     if (_isLoad == NO) {
         [self startApp];
@@ -118,8 +118,8 @@
     [BMConfigManager configDefaultData];
     
     /** 加载页面 */
-    self.window.rootViewController = [[BMMediatorManager shareInstance] loadHomeViewController];
-    [self.window makeKeyAndVisible];
+//    self.window.rootViewController = [[BMMediatorManager shareInstance] loadHomeViewController];
+//    [self.window makeKeyAndVisible];
 }
 
 @end
