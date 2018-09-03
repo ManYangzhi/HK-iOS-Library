@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.dependency 'YYText', '1.0.7'
-  s.dependency 'Masonry', '1.0.2'
+  s.dependency 'Masonry', '1.1.0'
   s.dependency 'YYModel', '1.0.4'
   s.dependency 'SSZipArchive', '1.6.2'
-  # s.dependency 'YTKNetwork', '2.0.3'
+  s.dependency 'YTKNetwork', '2.0.3'
   s.dependency 'SocketRocket', '0.4.2'
   s.dependency 'SDWebImage', '3.7.6'
   s.dependency 'MJRefresh', '3.1.12'
