@@ -25,6 +25,8 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage', '3.7.6'
   s.dependency 'MJRefresh', '3.1.12'
   s.dependency 'CTMediator', '13'
+  s.dependency 'AFNetworking', '~> 3.1.0'
+
 
   #Device信息非ARC
   s.subspec 'BMDevice' do |ss|
@@ -71,11 +73,11 @@ Pod::Spec.new do |s|
   end
 
   #本木Network类
-  # s.subspec 'BMNetwork' do |ss|
-  #   ss.source_files  = "Source/BMNetwork/**/*.{c,h,m,mm,S}"
-  #   ss.public_header_files = "Source/BMNetwork/**/*.h"
-  #   ss.requires_arc  = true
-  # end
+  s.subspec 'BMNetwork' do |ss|
+    ss.source_files  = "Source/BMNetwork/**/*.{c,h,m,mm,S}"
+    ss.public_header_files = "Source/BMNetwork/**/*.h"
+    ss.requires_arc  = true
+  end
 
   #本木Weex Module
   s.subspec 'BMModule' do |ss|
