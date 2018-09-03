@@ -90,7 +90,7 @@
     self.navigationItem.backBarButtonItem = _barBtnItem;
     
     /* 设置导航栏shadowImage */
-    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 
     /* 设置weex页面高度 */
     _weexHeight = [self weexViewHeight];
